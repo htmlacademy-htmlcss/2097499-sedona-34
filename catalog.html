@@ -10,18 +10,18 @@
       <img src="#" alt="Логотип Седона">
     </a>
     <nav class="nav header__nav">
-      <ul class="nav__list nav__list-main">
+      <ul class="nav__list header__main-nav">
         <li class="nav__item">
           <a class="nav__link" href="#">Главная</a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">О Седоне</a>
         </li>
-        <li class="nav__item">
-          <a class="nav__link nav__item_disabled" href="catalog.html">Гостиницы</a>
+        <li class="nav__item nav__item_enabled">
+          <a class="nav__link nav__link_disabled" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
-      <ul class="nav__list nav__list-user">
+      <ul class="nav__list header__user-nav">
         <li class="nav__item">
           <a class="nav__link" href="#">
             <span class="visually-hidden">Поиск</span>
@@ -55,53 +55,53 @@
         <h2 class="visually-hidden">Фильтр каталога</h2>
         <form action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter__group">
-            <legend class="filter__group-title">Инфраструктура:</legend>
+            <legend class="filter__title">Инфраструктура:</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="filter__description">
-                  <input class="filter__input" type="checkbox" name="swimming-pool" checked>
+                  <input class="filter__input checkbox" type="checkbox" name="swimming-pool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__description">
-                  <input class="filter__input" type="checkbox" name="parking" checked>
+                  <input class="filter__input checkbox" type="checkbox" name="parking" checked>
                   Парковка
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__description">
-                  <input class="filter__input" type="checkbox" name="wi-fi">
+                  <input class="filter__input checkbox" type="checkbox" name="wi-fi">
                   Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter__group">
-            <legend class="filter__group-title">Тип Жилья:</legend>
+            <legend class="filter__title">Тип Жилья:</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <label class="filter__description">
-                  <input class="filter__input" type="radio" name="type-location" value="hotel" checked>
+                  <input class="filter__input radio" type="radio" name="type-location" value="hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__description">
-                  <input class="control-input" type="radio" name="type-location" value="motel">
+                  <input class="filter__input radio" type="radio" name="type-location" value="motel">
                   Мотель
                 </label>
               </li>
               <li class="filter__item">
                 <label class="filter__description">
-                  <input class="filter__input" type="radio" name="type-location" value="apartment">
+                  <input class="filter__input radio" type="radio" name="type-location" value="apartment">
                   Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="filter__group">
-            <legend class="filter__group-title">Стоимость, &#8381;:</legend>
+            <legend class="filter__title">Стоимость, &#8381;:</legend>
             <ul class="filter__list">
               <li class="filter__item">
                 <label>
@@ -118,7 +118,7 @@
               <li class="filter__item">
                 <label>
                   <span class="visually-hidden">Стоимость, от и до</span>
-                  <input name="range" type="range" min="0" max="10000" step="500" value="9000">
+                  <input name="filter__input range" type="range" min="0" max="10000" step="500" value="9000">
                 </label>
               </li>
             </ul>
@@ -128,32 +128,35 @@
         </form>
       </section>
     </header>
-    <section class="sort-section main__sort-section">
+    <section class="main__sort-section sort-section">
       <h2 class="visually-hidden">Сортировка каталога</h2>
       <div class="sort-section__list">
         <div class="sort-section__item">
-          <p class="output-text">Найдено объектов:<output name="sort-result">0</output></p>
+          <p class="sort-section__title">
+            Найдено объектов:
+            <output name="sort-section__output output">0</output>
+          </p>
         </div>
         <div class="sort-section__item">
-          <select class="sort-section__select">
+          <select class="sort-section__select select">
             <option value="cheap">Сначала дешёвые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярное</option>
           </select>
         </div>
         <div class="sort-section__item">
-          <ul class="sort-show sort-section__show">
-            <li class="sort-show__item">
+          <ul class="sort-view sort-section__view">
+            <li class="sort-view__item">
               <a class="button button_active" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </li>
-            <li class="sort-show__item">
+            <li class="sort-view__item">
               <a class="button" href="#">
                 <span class="visually-hidden">Показать слайдер</span>
               </a>
             </li>
-            <li class="sort-show__item">
+            <li class="sort-view__item">
               <a class="button" href="#">
                 <span class="visually-hidden">Показать список</span>
               </a>
@@ -191,12 +194,12 @@
               <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
                 <label>
                   <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input type="range" name="rating" min="0" max="10" step="2">
-                  </label>
-                  <button class="button" type="submit">
-                    <span class="button-text">Рейтинг:</span>
-                    <output name="rating-result">8,5</output>
-                  </button>
+                  <input type="card__item range" name="rating" min="0" max="10" step="2">
+                </label>
+                <button class="button" type="submit">
+                  <span class="button__text">Рейтинг:</span>
+                  <output name="card__output output">8,5</output>
+                </button>
               </form>
             </li>
           </ul>
@@ -227,12 +230,12 @@
               <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
                 <label>
                   <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input type="range" name="rating" min="0" max="10" step="2">
-                  </label>
-                  <button class="button" type="submit">
-                    <span class="button-text">Рейтинг:</span>
-                    <output name="rating-result">9,2</output>
-                  </button>
+                  <input type="card__item range" name="rating" min="0" max="10" step="2">
+                </label>
+                <button class="button" type="submit">
+                  <span class="button__text">Рейтинг:</span>
+                  <output name="card__output output">9,2</output>
+                </button>
               </form>
             </li>
           </ul>
@@ -263,11 +266,11 @@
               <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
                 <label>
                   <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input type="range" name="rating" min="0" max="10" step="2">
-                  </label>
+                  <input type="card__item range" name="rating" min="0" max="10" step="2">
+                </label>
                 <button class="button" type="submit">
-                  <span class="button-text">Рейтинг:</span>
-                  <output name="rating-result">6,9</output>
+                  <span class="button__text">Рейтинг:</span>
+                  <output name="card__output output">6,9</output>
                 </button>
               </form>
             </li>
@@ -299,11 +302,11 @@
               <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
                 <label>
                   <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input type="range" name="rating" min="0" max="10" step="2">
+                  <input type="card__item range" name="rating" min="0" max="10" step="2">
                 </label>
                 <button class="button" type="submit">
-                  <span class="button-text">Рейтинг:</span>
-                  <output name="rating-result">5,0</output>
+                  <span class="button__text">Рейтинг:</span>
+                  <output name="card__output output">5,0</output>
                 </button>
               </form>
             </li>
@@ -348,42 +351,42 @@
     </section>
   </main>
   <footer class="footer page__footer">
-    <section class="footer__subscription">
+    <section class="subscription footer__subscription">
       <h2 class="visually-hidden">Подписка на рассылку</h2>
       <form action="https://echo.htmlacademy.ru/" method="post" name="subscription">
         <label>
-          <span class="footer__subscription-title">Подпишитесь на рассылку</span>
-          <span class="footer__subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</span>
+          <span class="subscription__title">Подпишитесь на рассылку</span>
+          <span class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
           <input type="email" name="email" placeholder="Ваш e-mail" required>
       </label>
       </form>
     </section>
     <section class="footer__contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <ul class="footer__community">
-        <li class="footer__community-channel">
-          <a class="footer__community-link" href="#" target="_blank">
+      <ul class="community footer__community">
+        <li class="community__channel">
+          <a class="community__link" href="#" target="_blank">
             <span class="visually-hidden">Вконтакте</span>
           </a>
         </li>
-        <li class="footer__community-channel">
-          <a class="footer__community-link" href="#" target="_blank">
+        <li class="community__channel">
+          <a class="community__link" href="#" target="_blank">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="footer__community-channel">
-          <a class="footer__community-link" href="#" target="_blank">
+        <li class="community__channel">
+          <a class="community__link" href="#" target="_blank">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <address class="footer__phone">
-        <a class="footer__phone-link" href="tel:+78128121212">
-          <span class="footer__phone-text">+7 (812) 812-12-12</span>
+      <address class="phone footer__phone">
+        <a class="phone__link" href="tel:+78128121212">
+          <span class="phone__text">+7 (812) 812-12-12</span>
         </a>
       </address>
-      <div class="footer__logo">
-        <a class="footer__logo-link" href="https://htmlacademy.ru/">
+      <div class="logo footer__logo">
+        <a class="logo__link" href="https://htmlacademy.ru/">
           <span class="visually-hidden">html academy</span>
         </a>
       </div>
