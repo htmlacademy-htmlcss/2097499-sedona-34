@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body class="page">
     <header class="header page__header">
@@ -13,13 +14,13 @@
       <nav class="nav header__nav">
         <ul class="nav__list header__main-nav">
           <li class="nav__item nav__item_enabled">
-            <a class="nav__link nav__link_disabled" href="#">Главная</a>
+            <a class="nav__link link nav__link_disabled" href="#">Главная</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="#">О Седоне</a>
+            <a class="nav__link link" href="#">О Седоне</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Гостиницы</a>
+            <a class="nav__link link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="nav__list header__user-nav">
@@ -34,7 +35,9 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="catalog.html">Хочу сюда!</a>
+            <a class="nav__link link-button link" href="catalog.html">
+              <span class="button__text">Хочу сюда!</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -42,11 +45,13 @@
     <main class="page__main">
       <section class="main-logo">
         <h1 class="visually-hidden">Город Седона, штат Аризона</h1>
-        <img class="main-logo__image" src="images/welcome.svg" alt="Добро пожаловать в великолепную Седону">
+        <div class="main-logo__divider">
+          <img class="main-logo__image image" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
+        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
-        <dl class="thesis advantages__thesis">
+        <dl class="thesis advantages__thesis title">
           <dt class="thesis__title">Седона</dt>
           <dd class="thesis__text"> - небольшой городок в аризоне, заслуживающий большего!</dd>
         </dl>
@@ -63,7 +68,7 @@
                   </dd>
                 </dl>
               </figcaption>
-              <img class="card__picture" src="images/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
+              <img class="card__picture image" src="images/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
             </figure>
             <ul class="card__items">
               <li class="card__item">
@@ -93,7 +98,7 @@
             </ul>
           </li>
           <li class="card advantages__card">
-            <img class="card__picture" src="images/advantages-photo-2.jpg" width="800" height="384" alt="Достопримечательность 'Мост Дьявола'">
+            <img class="card__picture image" src="images/advantages-photo-2.jpg" width="800" height="384" alt="Достопримечательность 'Мост Дьявола'">
             <figure class="card__figure">
               <figcaption class="card__figcaption">
                 <dl class="card__content">
@@ -136,9 +141,12 @@
         </ol>
       </section>
       <section class="search">
-        <span class="search__title">Заинтересовались?</span>
+        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+        <span class="search__title title">Заинтересовались?</span>
         <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="search__link" href="#"><h2>Поиск гостиницы в Седоне</h2></a>
+        <a class="search__link link-button link" href="#">
+          <span class="button__text button__large">Поиск гостиницы в Седоне</span>
+        </a>
       </section>
     </main>
     <footer class="footer page__footer">
@@ -146,10 +154,13 @@
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <form action="https://echo.htmlacademy.ru/" method="post" name="subscription">
           <label>
-            <span class="subscription__title">Подпишитесь на рассылку</span>
+            <span class="subscription__title title">Подпишитесь на рассылку</span>
             <span class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
-            <input type="email" name="email" placeholder="Ваш e-mail" required>
-        </label>
+            <input class="input" type="email" name="email" placeholder="Ваш e-mail" required>
+          </label>
+          <button class="button" type="submit">
+            <span class="button__text button__large">Подписаться</span>
+          </button>
         </form>
       </section>
       <section class="footer__contacts">
@@ -172,12 +183,12 @@
           </li>
         </ul>
         <address class="phone footer__phone">
-          <a class="phone__link" href="tel:+78128121212">
+          <a class="phone__link link" href="tel:+78128121212">
             <span class="phone__text">+7 (812) 812-12-12</span>
           </a>
         </address>
         <div class="logo footer__logo">
-          <a class="logo__link" href="https://htmlacademy.ru/">
+          <a class="logo__link" href="https://htmlacademy.ru/" rel="noopener">
             <span class="visually-hidden">html academy</span>
           </a>
         </div>
