@@ -19,11 +19,14 @@
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  /* line-height: 1.182em;
+     Урок освоил, пока оставлю до Perfect Pixel */
   min-width: 1200px;
 }
 
 .page__main {
   text-align: center;
+/* Пока оставлю для всего main, как буду работать с блоками и секциями, то переопределю */
 }
 
 .header__main-nav {
@@ -40,14 +43,14 @@
   display: block;
 }
 
-.main-logo {
+.hero {
   background-color: lightslategray;
   background-image: url('../images/background-index.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
-.main-logo__divider {
+.hero__divider {
   background-image: url('../images/background-index-divider.png');
   background-repeat: no-repeat;
   background-size: inherit;
@@ -82,18 +85,15 @@
   color: #fff;
 }
 
-.card__item .card__text,
-.advantages__card:not(:nth-child(1), :nth-child(2)) .card__text {
+.text_second {
   color: #333;
 }
 
-.card__item:not(:nth-child(2)),
-.advantages__card:nth-child(3),
-.advantages__card:nth-child(5) {
+.card_secondary {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages__card:nth-child(4) {
+.card_road {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -165,9 +165,6 @@
 .button {
   background-color: #82B3D3;
   font-family: inherit;
-}
-
-.button__text {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
@@ -175,9 +172,13 @@
   line-height: 20px;
 }
 
-.button__large {
+.button_large {
   font-size: 20px;
   line-height: 36px;
+}
+
+.button_link {
+  background-color: #756157;
 }
 
 .rating__info {
@@ -186,8 +187,4 @@
   line-height: 20px;
   color: #333;
   text-transform: uppercase;
-}
-
-.link-button {
-  background-color: #756157;
 }
