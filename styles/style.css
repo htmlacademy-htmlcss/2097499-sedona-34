@@ -51,6 +51,7 @@
 }
 
 .hero__divider {
+  /* Изменю на before в процессе учёбы */
   background-image: url('../images/background-index-divider.png');
   background-repeat: no-repeat;
   background-size: inherit;
@@ -177,7 +178,7 @@
   line-height: 36px;
 }
 
-.button_link {
+.button_second {
   background-color: #756157;
 }
 
