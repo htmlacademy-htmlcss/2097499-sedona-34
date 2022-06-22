@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Каталог</title>
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body class="page">
   <header class="header page__header">
@@ -13,28 +14,30 @@
     <nav class="nav header__nav">
       <ul class="nav__list header__main-nav">
         <li class="nav__item">
-          <a class="nav__link" href="/">Главная</a>
+          <a class="nav__link link" href="/">Главная</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">О Седоне</a>
+          <a class="nav__link link" href="#">О Седоне</a>
         </li>
         <li class="nav__item nav__item_enabled">
-          <a class="nav__link nav__link_disabled" href="catalog.html">Гостиницы</a>
+          <a class="nav__link link nav__link_disabled" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="nav__list header__user-nav">
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__button" href="#">
             <span class="visually-hidden">Поиск</span>
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">
+          <a class="nav__button" href="#">
             <span class="visually-hidden">Избранное</span>
           </a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="catalog.html">Хочу сюда!</a>
+          <a class="nav__button button button_second link" href="catalog.html">
+            <span>Хочу сюда!</span>
+          </a>
         </li>
       </ul>
     </nav>
@@ -107,13 +110,13 @@
               <li class="filter__item">
                 <label>
                   <span class="visually-hidden">Стоимость, от</span>
-                  <input name="filter__input" type="number" min="0" max="10000" value="0" placeholder="от">
+                  <input class="input" name="filter__input" type="number" min="0" max="10000" value="0" placeholder="от">
                 </label>
                 </li>
               <li class="filter__item">
                 <label>
                   <span class="visually-hidden">Стоимость, до</span>
-                  <input name="filter__input" type="number" min="0" max="10000" value="9000" placeholder="до">
+                  <input class="input" name="filter__input" type="number" min="0" max="10000" value="9000" placeholder="до">
                 </label>
               </li>
               <li class="filter__item">
@@ -124,7 +127,9 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="button" type="submit">
+            <span>Применить</span>
+          </button>
           <button class="button" type="reset">Сбросить</button>
         </form>
       </section>
@@ -134,8 +139,8 @@
       <div class="sort-section__list">
         <div class="sort-section__item">
           <p class="sort-section__title">
-            Найдено объектов:
-            <output name="sort-section__output output">0</output>
+            Найдено гостиниц:
+            <output name="sort-section__output output">38</output>
           </p>
         </div>
         <div class="sort-section__item">
@@ -170,9 +175,9 @@
       <h2 class="visually-hidden">Каталог гостиниц</h2>
       <ul class="catalog__list">
         <li class="card catalog__item">
-          <a class="card__link" href="#">
+          <a class="card__link link" href="#">
             <figure>
-              <img class="card__image" src="images/hotel-1.jpg"  width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+              <img class="card__image image" src="files/hotel-1.jpg"  width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
               <figcaption><h3 class="card__title">Amara Resort & Spa</h3></figcaption>
             </figure>
           </a>
@@ -182,33 +187,27 @@
           </dl>
           <ul class="card__functions">
             <li class="card__function">
-              <a class="button" href="#">
-                <span class="button__text">Подробнее</span>
+              <a class="button button_second link" href="#">
+                <span>Подробнее</span>
               </a>
             </li>
             <li class="card__function">
               <button type="button" class="button">
-                <span class="button__text">В избранное</span>
+                <span>В избранное</span>
               </button>
             </li>
             <li class="card__function">
-              <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
-                <label>
-                  <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input class="card__item range" type="range" name="rating" min="0" max="10" step="2">
-                </label>
-                <button class="button" type="submit">
-                  <span class="button__text">Рейтинг:</span>
-                  <output name="card__output output">8,5</output>
-                </button>
-              </form>
+              <ul class="card__rating rating">
+                <li class="rating__stars"></li>
+                <li class="rating__info">Рейтинг: 5,0</li>
+              </ul>
             </li>
           </ul>
         </li>
         <li class="card catalog__item">
-          <a class="card__link" href="#">
+          <a class="card__link link" href="#">
             <figure>
-              <img class="card__image" src="images/hotel-2.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+              <img class="card__image image" src="files/hotel-2.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
               <figcaption><h3 class="card__title">Villas at Poco Diablo</h3></figcaption>
             </figure>
           </a>
@@ -218,33 +217,27 @@
           </dl>
           <ul class="card__functions">
             <li class="card__function">
-              <a class="button" href="#">
-                <span class="button__text">Подробнее</span>
+              <a class="button button_second link" href="#">
+                <span>Подробнее</span>
               </a>
             </li>
             <li class="card__function">
               <button type="button" class="button button_enabled">
-                <span class="button__text">В избранное</span>
+                <span>В избранное</span>
               </button>
             </li>
             <li class="card__function">
-              <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
-                <label>
-                  <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input class="card__item range" type="range" name="rating" min="0" max="10" step="2">
-                </label>
-                <button class="button" type="submit">
-                  <span class="button__text">Рейтинг:</span>
-                  <output name="card__output output">9,2</output>
-                </button>
-              </form>
+              <ul class="card__rating rating">
+                <li class="rating__stars"></li>
+                <li class="rating__info">Рейтинг: 5,0</li>
+              </ul>
             </li>
           </ul>
         </li>
         <li class="card catalog__item">
-          <a class="card__link" href="#">
+          <a class="card__link link" href="#">
             <figure>
-              <img class="card__image" src="images/hotel-3.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+              <img class="card__image image" src="files/hotel-3.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
               <figcaption><h3 class="card__title">Desert Quail Inn</h3></figcaption>
             </figure>
           </a>
@@ -254,33 +247,27 @@
           </dl>
           <ul class="card__functions">
             <li class="card__function">
-              <a class="button" href="#">
-                <span class="button__text">Подробнее</span>
+              <a class="button button_second link" href="#">
+                <span>Подробнее</span>
               </a>
             </li>
             <li class="card__function">
               <button type="button" class="button">
-                <span class="button__text">В избранное</span>
+                <span>В избранное</span>
               </button>
             </li>
             <li class="card__function">
-              <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
-                <label>
-                  <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input class="card__item range" type="range" name="rating" min="0" max="10" step="2">
-                </label>
-                <button class="button" type="submit">
-                  <span class="button__text">Рейтинг:</span>
-                  <output name="card__output output">6,9</output>
-                </button>
-              </form>
+              <ul class="card__rating rating">
+                <li class="rating__stars"></li>
+                <li class="rating__info">Рейтинг: 6,9</li>
+              </ul>
             </li>
           </ul>
         </li>
         <li class="card catalog__item">
-          <a class="card__link" href="#">
+          <a class="card__link link" href="#">
             <figure>
-              <img class="card__image" src="images/hotel-4.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+              <img class="card__image image" src="files/hotel-4.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
               <figcaption><h3 class="card__title">GreenTree Inn</h3></figcaption>
             </figure>
           </a>
@@ -290,26 +277,20 @@
           </dl>
           <ul class="card__functions">
             <li class="card__function">
-              <a class="button" href="#">
-                <span class="button__text">Подробнее</span>
+              <a class="button button_second link" href="#">
+                <span>Подробнее</span>
               </a>
             </li>
             <li class="card__function">
               <button type="button" class="button">
-                <span class="button__text">В избранное</span>
+                <span>В избранное</span>
               </button>
             </li>
             <li class="card__function">
-              <form action="https://echo.htmlacademy.ru/" method="post" name="rating">
-                <label>
-                  <span class="visually-hidden">Поставить оценку гостинице</span>
-                  <input class="card__item range" type="range" name="rating" min="0" max="10" step="2">
-                </label>
-                <button class="button" type="submit">
-                  <span class="button__text">Рейтинг:</span>
-                  <output name="card__output output">5,0</output>
-                </button>
-              </form>
+              <ul class="card__rating rating">
+                <li class="rating__stars"></li>
+                <li class="rating__info">Рейтинг: 5,0</li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -318,31 +299,41 @@
         <li class="pagination">
           <ul class="pagination__list">
             <li class="pagination__item">
-              <a class="pagination__link" href="#">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">4</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                <span class="visually-hidden">Следующие страницы</span>
-                ...
+              <a class="pagination__button button button_large link" href="#">
+                <span>1</span>
               </a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#">10</a>
+              <a class="pagination__button button button_large link" href="#">
+                <span>2</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__button button button_large link" href="#">
+                <span>3</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__button button button_large link" href="#">
+                <span>4</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__button button button_large link" href="#">
+                <span class="visually-hidden">Следующие страницы</span>
+                <span>...</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__button button button_large link" href="#">
+                <span>10</span>
+              </a>
             </li>
           </ul>
         </li>
         <li class="pagination__show">
           <label class="pagination__text" for="pagination-select">Гостиниц на странице:</label>
-          <select name="pagination__select" id="pagination-select">
+          <select class="select" name="pagination__select" id="pagination-select">
             <option value="4">4</option>
             <option value="8">9</option>
             <option value="12">12</option>
@@ -356,10 +347,13 @@
       <h2 class="visually-hidden">Подписка на рассылку</h2>
       <form action="https://echo.htmlacademy.ru/" method="post" name="subscription">
         <label>
-          <span class="subscription__title">Подпишитесь на рассылку</span>
+          <span class="subscription__title title">Подпишитесь на рассылку</span>
           <span class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
-          <input type="email" name="email" placeholder="Ваш e-mail" required>
-      </label>
+          <input class="input" type="email" name="email" placeholder="Ваш e-mail" required>
+        </label>
+        <button class="button button_large" type="submit">
+          <span>Подписаться</span>
+        </button>
       </form>
     </section>
     <section class="footer__contacts">
@@ -387,7 +381,7 @@
         </a>
       </address>
       <div class="logo footer__logo">
-        <a class="logo__link" href="https://htmlacademy.ru/">
+        <a class="logo__link" href="https://htmlacademy.ru/" rel="noopener">
           <span class="visually-hidden">html academy</span>
         </a>
       </div>

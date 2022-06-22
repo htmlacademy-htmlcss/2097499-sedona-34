@@ -1,0 +1,191 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.page {
+  margin: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  /* line-height: 1.182em;
+     Урок освоил, пока оставлю до Perfect Pixel */
+  min-width: 1200px;
+}
+
+.page__main {
+  text-align: center;
+/* Пока оставлю для всего main, как буду работать с блоками и секциями, то переопределю */
+}
+
+.header__main-nav {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image {
+  display: block;
+}
+
+.hero {
+  background-color: lightslategray;
+  background-image: url('../images/background-index.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.hero__divider {
+  /* Изменю на before в процессе учёбы */
+  background-image: url('../images/background-index-divider.png');
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: 0 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.advantages__cards .card__title {
+  text-transform: uppercase;
+}
+
+.card__text,
+.card__number {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card__figcaption {
+  background-color: #82B3D3;
+  color: #fff;
+}
+
+.text_second {
+  color: #333;
+}
+
+.card_secondary {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.card_road {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.subscription_image {
+  background-color: lightslategray;
+  background-image: url('../images/background-footer.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+}
+
+.phone__text {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 40px;
+}
+
+.main__title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.main__header {
+  background-color: lightslategray;
+  background-image: url('../images/background-index.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+.filter__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.filter__description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.sort-section__title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333;
+  font-family: inherit;
+}
+
+.input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: #82B3D3;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.button_large {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button_second {
+  background-color: #756157;
+}
+
+.rating__info {
+  background-color: #82B3D3;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-transform: uppercase;
+}
