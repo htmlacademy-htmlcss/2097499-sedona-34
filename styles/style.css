@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 .page {
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -21,12 +25,42 @@
   line-height: 26px;
   /* line-height: 1.182em;
      Урок освоил, пока оставлю до Perfect Pixel */
-  min-width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__wrapper {
+  margin: 0 auto;
+  width: 1200px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.page__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;
+}
+
+.nav__wrapper {
+  width: 891px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
 }
 
 .page__main {
-  text-align: center;
-/* Пока оставлю для всего main, как буду работать с блоками и секциями, то переопределю */
+  flex-grow: 1;
 }
 
 .header__main-nav {
@@ -43,11 +77,15 @@
   display: block;
 }
 
-.hero {
+.hero__logo {
   background-color: lightslategray;
   background-image: url('../images/background-index.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+.hero__image {
+  margin: 0 auto;
 }
 
 .hero__divider {
@@ -56,6 +94,31 @@
   background-repeat: no-repeat;
   background-size: inherit;
   background-position: 0 100%;
+}
+
+.filter__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter__left {
+  display: flex;
+}
+
+.filter__right {
+  display: flex;
+}
+
+.filter__group {
+  margin-right: 70px;
+}
+
+.filter__buttons {
+  align-self: flex-end;
+}
+
+.filter__button {
+  display: block;
 }
 
 .title {
@@ -124,12 +187,43 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #fff;
+  padding: 35px 70px 70px;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
 }
 
 .breadcrumbs__link {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.catalog {
+  padding-top: 50px;
+  padding-left: 72px;
+  padding-right: 71px;
+  padding-bottom: 25px;
+}
+
+.catalog__sort {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__wrapper {
+  width: 528px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort__select {
+  width: 290px;
+}
+
+.sort__views {
+  width: 160px;
 }
 
 .filter__title {
@@ -143,7 +237,7 @@
   line-height: 21px;
 }
 
-.sort-section__title {
+.sort__title {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -188,4 +282,29 @@
   line-height: 20px;
   color: #333;
   text-transform: uppercase;
+}
+
+.catalog__pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+}
+
+.hero,
+.advantages,
+.search,
+.subscription {
+  text-align: center;
+}
+
+.page__footer {
+  padding: 40px 70px 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
 }

@@ -7,192 +7,196 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body class="page">
-    <header class="header page__header">
-      <a class="logo header__logo">
-        <img src="images/logo-main.svg" width="139" height="70" alt="Логотип Седона">
-      </a>
-      <nav class="nav header__nav">
-        <ul class="nav__list header__main-nav">
-          <li class="nav__item nav__item_enabled">
-            <a class="nav__link link nav__link_disabled" href="#">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="#">О Седоне</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link link" href="catalog.html">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="nav__list header__user-nav">
-          <li class="nav__item">
-            <a class="nav__button" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__button" href="#">
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__button button button_second link" href="catalog.html">
-              <span>Хочу сюда!</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page__main">
-      <section class="hero-logo">
-        <h1 class="visually-hidden">Город Седона, штат Аризона</h1>
-        <div class="hero__divider">
-          <img class="hero__image image" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
-        </div>
-      </section>
-      <section class="advantages">
-        <h2 class="visually-hidden">Преимущества</h2>
-        <dl class="thesis advantages__thesis title">
-          <dt class="thesis__title">Седона</dt>
-          <dd class="thesis__text"> - небольшой городок в аризоне, заслуживающий большего!</dd>
-        </dl>
-        <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
-        <ol class="advantages__cards">
-          <li class="card advantages__card">
-            <figure class="card__figure">
-              <figcaption class="card__figcaption">
-                <dl class="card__content">
-                  <dt class="card__title">Настоящий городок</dt>
-                  <dd class="card__number">- №1 -</dd>
-                  <dd class="card__text">
-                    Седона — не аттракцион для туристов, там течёт своя жизнь
-                  </dd>
-                </dl>
-              </figcaption>
-              <img class="card__picture image" src="images/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
-            </figure>
-            <ul class="card__items">
-              <li class="card__item card_secondary">
-                <dl class="card__content">
-                  <dt class="card__title">Жильё</dt>
-                  <dd class="card__text text_second">
-                    Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                  </dd>
-                </dl>
+    <div class="page__wrapper">
+      <header class="header page__header">
+        <a class="logo header__logo">
+          <img class="logo__image image" src="images/logo-main.svg" width="139" height="70" alt="Логотип Седона">
+        </a>
+        <div class="nav__wrapper">
+          <nav class="nav header__nav">
+            <ul class="nav__list header__main-nav">
+              <li class="nav__item nav__item_enabled">
+                <a class="nav__link link nav__link_disabled" href="#">Главная</a>
               </li>
-              <li class="card__item">
-                <dl class="card__content">
-                  <dt class="card__title">Еда</dt>
-                  <dd class="card__text text_second">
-                    Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-                  </dd>
-                </dl>
+              <li class="nav__item">
+                <a class="nav__link link" href="#">О Седоне</a>
               </li>
-              <li class="card__item card_secondary">
-                <dl class="card__content">
-                  <dt class="card__title">Сувениры</dt>
-                  <dd class="card__text text_second">
-                    Не только китайского, но и настоящего местного производства!
-                  </dd>
-                </dl>
+              <li class="nav__item">
+                <a class="nav__link link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
-          </li>
-          <li class="card advantages__card">
-            <img class="card__picture image" src="images/advantages-photo-2.jpg" width="800" height="384" alt="Достопримечательность 'Мост Дьявола'">
-            <figure class="card__figure">
-              <figcaption class="card__figcaption">
-                <dl class="card__content">
-                  <dt class="card__title">Там есть Мост Дьявола</dt>
-                  <dd class="card__number">- №2 -</dd>
-                  <dd class="card__text">
-                    Да, по нему можно пройти! Если вы осмелитесь, разумеется
-                  </dd>
-                </dl>
-              </figcaption>
-            </figure>
-          </li>
-          <li class="card card_secondary advantages__card">
-            <dl class="card__content">
-              <dt class="card__title">Небольшая площадь</dt>
-              <dd class="card__number">- №3 -</dd>
-              <dd class="card__text text_second">
-                Все достопримечательности находятся очень близко
-              </dd>
-            </dl>
-          </li>
-          <li class="card card_road advantages__card">
-            <dl class="card__content">
-              <dt class="card__title">Красивая дорога</dt>
-              <dd class="card__number">- №4 -</dd>
-              <dd class="card__text text_second">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </dd>
-            </dl>
-          </li>
-          <li class="card card_secondary advantages__card">
-            <dl class="card__content">
-              <dt class="card__title">Мало туристов</dt>
-              <dd class="card__number">- №5 -</dd>
-              <dd class="card__text text_second">
-                Большинство едет в Гранд Каньон и толпится там
-              </dd>
-            </dl>
-          </li>
-        </ol>
-      </section>
-      <section class="search">
-        <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <span class="search__title title">Заинтересовались?</span>
-        <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button button_large search__button button_second link" href="#">
-          <span>Поиск гостиницы в Седоне</span>
-        </a>
-      </section>
-    </main>
-    <footer class="footer page__footer">
-      <section class="subscription footer__subscription subscription_image">
-        <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <form action="https://echo.htmlacademy.ru/" method="post" name="subscription">
-          <label>
-            <span class="subscription__title title">Подпишитесь на рассылку</span>
-            <span class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</span>
-            <input class="input" type="email" name="email" placeholder="Ваш e-mail" required>
-          </label>
-          <button class="button button_large" type="submit">
-            <span>Подписаться</span>
-          </button>
-        </form>
-      </section>
-      <section class="footer__contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <ul class="community footer__community">
-          <li class="community__channel">
-            <a class="community__link" href="#" target="_blank">
-              <span class="visually-hidden">Вконтакте</span>
-            </a>
-          </li>
-          <li class="community__channel">
-            <a class="community__link" href="#" target="_blank">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="community__channel">
-            <a class="community__link" href="#" target="_blank">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-        </ul>
-        <address class="phone footer__phone">
-          <a class="phone__link link" href="tel:+78128121212">
-            <span class="phone__text">+7 (812) 812-12-12</span>
-          </a>
-        </address>
-        <div class="logo footer__logo">
-          <a class="logo__link" href="https://htmlacademy.ru/" rel="noopener">
-            <span class="visually-hidden">html academy</span>
-          </a>
+            <ul class="nav__list header__user-nav">
+              <li class="nav__item">
+                <a class="nav__button" href="#">
+                  <span class="visually-hidden">Поиск</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__button" href="#">
+                  <span class="visually-hidden">Избранное</span>
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__button button button_second link" href="catalog.html">
+                  <span>Хочу сюда!</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-      </section>
-    </footer>
+      </header>
+      <main class="page__main main__container">
+        <section class="hero">
+          <h1 class="visually-hidden">Город Седона, штат Аризона</h1>
+          <div class="hero__logo">
+            <img class="hero__image image" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
+          </div>
+          <div class="hero__thesis">
+            <dl class="thesis advantages__thesis title">
+              <dt class="thesis__title">Седона</dt>
+              <dd class="thesis__text"> - небольшой городок в аризоне, заслуживающий большего!</dd>
+            </dl>
+            <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+        </section>
+        <section class="advantages">
+          <h2 class="visually-hidden">Преимущества города Седоны</h2>
+          <ol class="advantages__cards">
+            <li class="card advantages__card">
+              <figure class="card__figure">
+                <figcaption class="card__figcaption">
+                  <dl class="card__content">
+                    <dt class="card__title">Настоящий городок</dt>
+                    <dd class="card__number">- №1 -</dd>
+                    <dd class="card__text">
+                      Седона — не аттракцион для туристов, там течёт своя жизнь
+                    </dd>
+                  </dl>
+                </figcaption>
+                <img class="card__picture image" src="images/advantages-photo-1.jpg" width="800" height="384" alt="Город Седона">
+              </figure>
+              <ul class="card__items">
+                <li class="card__item card_secondary">
+                  <dl class="card__content">
+                    <dt class="card__title">Жильё</dt>
+                    <dd class="card__text text_second">
+                      Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                    </dd>
+                  </dl>
+                </li>
+                <li class="card__item">
+                  <dl class="card__content">
+                    <dt class="card__title">Еда</dt>
+                    <dd class="card__text text_second">
+                      Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                    </dd>
+                  </dl>
+                </li>
+                <li class="card__item card_secondary">
+                  <dl class="card__content">
+                    <dt class="card__title">Сувениры</dt>
+                    <dd class="card__text text_second">
+                      Не только китайского, но и настоящего местного производства!
+                    </dd>
+                  </dl>
+                </li>
+              </ul>
+            </li>
+            <li class="card advantages__card">
+              <img class="card__picture image" src="images/advantages-photo-2.jpg" width="800" height="384" alt="Достопримечательность 'Мост Дьявола'">
+              <figure class="card__figure">
+                <figcaption class="card__figcaption">
+                  <dl class="card__content">
+                    <dt class="card__title">Там есть Мост Дьявола</dt>
+                    <dd class="card__number">- №2 -</dd>
+                    <dd class="card__text">
+                      Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                    </dd>
+                  </dl>
+                </figcaption>
+              </figure>
+            </li>
+            <li class="card card_secondary advantages__card">
+              <dl class="card__content">
+                <dt class="card__title">Небольшая площадь</dt>
+                <dd class="card__number">- №3 -</dd>
+                <dd class="card__text text_second">
+                  Все достопримечательности находятся очень близко
+                </dd>
+              </dl>
+            </li>
+            <li class="card card_road advantages__card">
+              <dl class="card__content">
+                <dt class="card__title">Красивая дорога</dt>
+                <dd class="card__number">- №4 -</dd>
+                <dd class="card__text text_second">
+                  Ехать в Седону из Лас-Вегаса совсем не скучно!
+                </dd>
+              </dl>
+            </li>
+            <li class="card card_secondary advantages__card">
+              <dl class="card__content">
+                <dt class="card__title">Мало туристов</dt>
+                <dd class="card__number">- №5 -</dd>
+                <dd class="card__text text_second">
+                  Большинство едет в Гранд Каньон и толпится там
+                </dd>
+              </dl>
+            </li>
+          </ol>
+        </section>
+        <section class="search">
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <span class="search__title title">Заинтересовались?</span>
+          <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button button_large search__button button_second link" href="#">
+            <span>Поиск гостиницы в Седоне</span>
+          </a>
+        </section>
+        <section class="subscription subscription_image">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post" name="subscription">
+            <p class="subscription__title title"><label for="subscription__input">Подпишитесь на рассылку</label></p>
+            <p class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <input id="subscription__input" class="input" type="email" name="email" placeholder="Ваш e-mail" required>
+            <button class="button button_large" type="submit">
+              <span>Подписаться</span>
+            </button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer page__footer">
+        <div class="footer__wrapper">
+          <h2 class="visually-hidden">Контакты</h2>
+          <ul class="community footer__community">
+            <li class="community__channel">
+              <a class="community__link" href="#" target="_blank">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="community__channel">
+              <a class="community__link" href="#" target="_blank">
+                <span class="visually-hidden">Телеграм</span>
+              </a>
+            </li>
+            <li class="community__channel">
+              <a class="community__link" href="#" target="_blank">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </li>
+          </ul>
+          <address class="phone footer__phone">
+            <a class="phone__link link" href="tel:+78128121212">
+              <span class="phone__text">+7 (812) 812-12-12</span>
+            </a>
+          </address>
+          <div class="logo footer__logo">
+            <a class="logo__link" href="https://htmlacademy.ru/" rel="noopener">
+              <span class="visually-hidden">html academy</span>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
