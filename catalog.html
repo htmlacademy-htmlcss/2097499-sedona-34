@@ -10,7 +10,7 @@
   <div class="page__wrapper">
     <header class="header page__header">
       <a class="logo header__logo">
-        <img class="logo__image image" src="images/logo-main.svg" width="139" height="70" alt="Логотип Седона">
+        <img class="logo__image image" src="images/logo-main.svg" width="139" height="70" alt="Логотип Седона.">
       </a>
       <div class="nav__wrapper">
         <nav class="nav header__nav">
@@ -36,9 +36,9 @@
                 <span class="visually-hidden">Избранное</span>
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item nav__item-button">
               <a class="nav__button button button_second link" href="catalog.html">
-                <span>Хочу сюда!</span>
+                <span class="button__text">Хочу сюда!</span>
               </a>
             </li>
           </ul>
@@ -52,7 +52,7 @@
           <ul class="breadcrumbs main__breadcrumbs">
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="index.html">
-                <span class="visually-hidden">Главная</span>
+                <span>Главная</span>
               </a>
             </li>
             <li class="breadcrumbs__item">
@@ -138,7 +138,7 @@
                   <button class="button filter__button" type="submit">
                     <span>Применить</span>
                   </button>
-                  <button class="button filter__button" type="reset">Сбросить</button>
+                  <button class="button_reset" type="reset">Сбросить</button>
                 </div>
               </div>
             </form>
@@ -159,17 +159,17 @@
             </select>
             <ul class="sort__views">
               <li class="sort__view">
-                <a class="button button_active" href="#">
+                <a class="sort__button button_active" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
               </li>
               <li class="sort__view">
-                <a class="button" href="#">
+                <a class="sort__button" href="#">
                   <span class="visually-hidden">Показать слайдер</span>
                 </a>
               </li>
               <li class="sort__view">
-                <a class="button" href="#">
+                <a class="sort__button" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </li>
@@ -181,7 +181,7 @@
           <li class="card catalog__item">
             <a class="card__link link" href="#">
               <figure>
-                <img class="card__image image" src="files/hotel-1.jpg"  width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+                <img class="card__image image" src="files/hotel-1.jpg"  width="300" height="211" alt="Гостиница: Amara Resort & Spa.">
                 <figcaption><h3 class="card__title">Amara Resort & Spa</h3></figcaption>
               </figure>
             </a>
@@ -211,7 +211,7 @@
           <li class="card catalog__item">
             <a class="card__link link" href="#">
               <figure>
-                <img class="card__image image" src="files/hotel-2.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+                <img class="card__image image" src="files/hotel-2.jpg" width="300" height="211" alt="Гостиница: Villas at Poco Diablo.">
                 <figcaption><h3 class="card__title">Villas at Poco Diablo</h3></figcaption>
               </figure>
             </a>
@@ -241,7 +241,7 @@
           <li class="card catalog__item">
             <a class="card__link link" href="#">
               <figure>
-                <img class="card__image image" src="files/hotel-3.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+                <img class="card__image image" src="files/hotel-3.jpg" width="300" height="211" alt="Гостиница: Desert Quail Inn.">
                 <figcaption><h3 class="card__title">Desert Quail Inn</h3></figcaption>
               </figure>
             </a>
@@ -271,7 +271,7 @@
           <li class="card catalog__item">
             <a class="card__link link" href="#">
               <figure>
-                <img class="card__image image" src="files/hotel-4.jpg" width="300" height="211" alt="Достопримечательность: Amara Resort & Spa">
+                <img class="card__image image" src="files/hotel-4.jpg" width="300" height="211" alt="Гостиница: GreenTree Inn.">
                 <figcaption><h3 class="card__title">GreenTree Inn</h3></figcaption>
               </figure>
             </a>
@@ -304,39 +304,39 @@
             <ul class="pagination__list">
               <li class="pagination__item">
                 <a class="pagination__button button button_large link" href="#">
-                  <span>1</span>
+                  <span class="pagination__text">1</span>
                 </a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__button button button_large link" href="#">
-                  <span>2</span>
+                  <span class="pagination__text">2</span>
                 </a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__button button button_large link" href="#">
-                  <span>3</span>
+                  <span class="pagination__text">3</span>
                 </a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__button button button_large link" href="#">
-                  <span>4</span>
+                  <span class="pagination__text">4</span>
                 </a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__button button button_large link" href="#">
                   <span class="visually-hidden">Следующие страницы</span>
-                  <span>...</span>
+                  <span class="pagination__text">...</span>
                 </a>
               </li>
               <li class="pagination__item">
                 <a class="pagination__button button button_large link" href="#">
-                  <span>10</span>
+                  <span class="pagination__text">10</span>
                 </a>
               </li>
             </ul>
           </li>
           <li class="pagination__show">
-            <label class="pagination__text" for="pagination-select">Гостиниц на странице:</label>
+            <label class="pagination__label" for="pagination-select">Гостиниц на странице:</label>
             <select class="select" name="pagination__select" id="pagination-select">
               <option value="4">4</option>
               <option value="8">9</option>
@@ -351,7 +351,7 @@
           <p class="subscription__title title"><label for="subscription__input">Подпишитесь на рассылку</label></p>
           <p class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <input id="subscription__input" class="input" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="button button_large" type="submit">
+          <button class="subscription__button button button_large" type="submit">
             <span>Подписаться</span>
           </button>
         </form>
@@ -378,7 +378,7 @@
           </li>
         </ul>
         <address class="phone footer__phone">
-          <a class="phone__link" href="tel:+78128121212">
+          <a class="phone__link link" href="tel:+78128121212">
             <span class="phone__text">+7 (812) 812-12-12</span>
           </a>
         </address>
