@@ -27,6 +27,7 @@ html {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
 }
 
 .link {
@@ -34,8 +35,7 @@ html {
   color: inherit;
 }
 
-.button {
-  background-color: #82B3D3;
+.btn {
   font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
@@ -44,9 +44,29 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  border-style: none;
 }
 
-.button_small {
+.btn_primary {
+  background-color: #82B3D3;
+}
+
+.btn_secondary {
+  background-color: #756157;
+}
+
+.btn_info {
+  background-color: #F2F2F2;
+  font-weight: 400;
+  color: #333;
+}
+
+.btn_success {
+  background-color: #7DB54F;
+}
+
+.btn_sm {
   font-size: 16px;
   line-height: 20px;
   padding-top: 9px;
@@ -55,14 +75,10 @@ html {
   padding-left: 15px;
 }
 
-.button_large {
+.btn_lg {
   font-size: 20px;
   line-height: 36px;
   padding: 12px 15px;
-}
-
-.button__prefer_check {
-  background-color: #7DB54F;
 }
 
 .image {
@@ -148,17 +164,16 @@ html {
   box-sizing: border-box;
 }
 
-.nav__item-button {
+.nav__item-btn {
   padding: 14px 0 14px 20px;
 }
 
-.nav__button.button {
+.nav__btn.btn {
   min-width: 160px;
   padding: 8px 15px;
   box-sizing: border-box;
   display: inline-block;
   text-align: center;
-  background-color: #756157;
 }
 
 .hero__logo {
@@ -258,7 +273,7 @@ html {
   line-height: 21px;
 }
 
-.filter__button {
+.filter__btn {
   min-width: 160px;
   padding: 14px 15px;
   border: none;
@@ -267,7 +282,7 @@ html {
   margin: 0 auto;
 }
 
-.button_reset {
+.btn_reset {
   display: block;
   margin: 20px auto 0;
   padding: 0;
@@ -307,6 +322,7 @@ html {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
 }
 
 .advantages__cards {
@@ -427,7 +443,7 @@ html {
   justify-content: space-between;
 }
 
-.sort__button {
+.sort__btn {
   display: block;
   min-width: 48px;
   min-height: 48px;
@@ -446,19 +462,14 @@ html {
 
 .catalog__item {
   padding: 20px;
-}
-
-.catalog__card {
-  padding: 0;
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas:
     "image image"
     "title title"
-    "type price"
-    "details prefer"
-    "stars rating";
+    "type type"
+    "detail favorite"
+    "star rating";
   column-gap: 20px;
   row-gap: 16px;
 }
@@ -471,39 +482,36 @@ html {
   grid-area: title;
 }
 
-.card__title-box h3{
+.card__type-box {
+  grid-area: type;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.card__type-box > dd {
   margin: 0;
 }
 
-.card__type-box {
-  grid-area: type;
+.card__detail-box {
+  grid-area: detail;
 }
 
-.card__price-box {
-  grid-area: price;
+.card__favorite-box {
+  grid-area: favorite;
 }
 
-.card__details {
-  grid-area: details;
+.card__stars-box {
+  grid-area: favorite;
 }
 
-.card__details a {
-  background-color: #756157;
+.card__stars-box {
+  grid-area: star;
 }
 
-.card__prefer {
-  grid-area: prefer;
-}
-
-.card__stars {
-  grid-area: stars;
-}
-
-.card__rating {
+.card__rating-box {
   grid-area: rating;
-  font-weight: 400;
-  color: #333;
-  background-color: #F2F2F2;
 }
 
 .input {
@@ -532,15 +540,11 @@ html {
   justify-content: space-between;
 }
 
-.pagination__button {
+.pagination__btn {
   display: flex;
   min-width: 60px;
   min-height: 60px;
   box-sizing: border-box;
-}
-
-.pagination__text {
-  margin: auto;
 }
 
 .pagination__show {
@@ -565,12 +569,11 @@ html {
   margin: 29px auto 56px;
 }
 
-.search__button {
+.search__btn {
   display: inline-block;
   min-width: 574px;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: #756157;
 }
 
 .subscription {
@@ -596,7 +599,7 @@ html {
   margin: 0 auto 46px;
 }
 
-.subscription__button {
+.subscription__btn {
   min-width: 200px;
   border: none;
   box-sizing: border-box;
