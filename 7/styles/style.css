@@ -35,7 +35,7 @@ html {
   color: inherit;
 }
 
-.btn {
+.button {
   font-family: inherit;
   font-weight: 700;
   text-transform: uppercase;
@@ -48,25 +48,25 @@ html {
   border-style: none;
 }
 
-.btn_primary {
+.button_primary {
   background-color: #82B3D3;
 }
 
-.btn_secondary {
+.button_secondary {
   background-color: #756157;
 }
 
-.btn_info {
+.button_info {
   background-color: #F2F2F2;
   font-weight: 400;
   color: #333;
 }
 
-.btn_success {
+.button_success {
   background-color: #7DB54F;
 }
 
-.btn_sm {
+.button_small {
   font-size: 16px;
   line-height: 20px;
   padding-top: 9px;
@@ -75,7 +75,7 @@ html {
   padding-left: 15px;
 }
 
-.btn_lg {
+.button_large {
   font-size: 20px;
   line-height: 36px;
   padding: 12px 15px;
@@ -164,11 +164,11 @@ html {
   box-sizing: border-box;
 }
 
-.nav__item-btn {
+.nav__item-button {
   padding: 14px 0 14px 20px;
 }
 
-.nav__btn.btn {
+.nav__button.button {
   min-width: 160px;
   padding: 8px 15px;
   box-sizing: border-box;
@@ -273,7 +273,7 @@ html {
   line-height: 21px;
 }
 
-.filter__btn {
+.filter__button {
   min-width: 160px;
   padding: 14px 15px;
   border: none;
@@ -282,7 +282,7 @@ html {
   margin: 0 auto;
 }
 
-.btn_reset {
+.button_reset {
   display: block;
   margin: 20px auto 0;
   padding: 0;
@@ -443,7 +443,7 @@ html {
   justify-content: space-between;
 }
 
-.sort__btn {
+.sort__button {
   display: block;
   min-width: 48px;
   min-height: 48px;
@@ -540,7 +540,7 @@ html {
   justify-content: space-between;
 }
 
-.pagination__btn {
+.pagination__button {
   display: flex;
   min-width: 60px;
   min-height: 60px;
@@ -569,7 +569,7 @@ html {
   margin: 29px auto 56px;
 }
 
-.search__btn {
+.search__button {
   display: inline-block;
   min-width: 574px;
   margin: 0 auto;
@@ -599,7 +599,7 @@ html {
   margin: 0 auto 46px;
 }
 
-.subscription__btn {
+.subscription__button {
   min-width: 200px;
   border: none;
   box-sizing: border-box;
