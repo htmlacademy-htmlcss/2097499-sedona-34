@@ -37,9 +37,7 @@
               </a>
             </li>
             <li class="nav__item nav__item-button">
-              <a class="nav__button button button_second link" href="catalog.html">
-                <span class="button__text">Хочу сюда!</span>
-              </a>
+              <a class="nav__button button button_small button_secondary" href="catalog.html" role="button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -51,9 +49,7 @@
           <h1 class="main__title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs main__breadcrumbs">
             <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="index.html">
-                <span>Главная</span>
-              </a>
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link breadcrumbs__link_desabled">Гостиницы</a>
@@ -135,9 +131,7 @@
                   </ul>
                 </fieldset>
                 <div class="filter__buttons">
-                  <button class="button filter__button" type="submit">
-                    <span>Применить</span>
-                  </button>
+                  <button class="button button_primary button_small filter__button" type="submit">Применить</button>
                   <button class="button_reset" type="reset">Сбросить</button>
                 </div>
               </div>
@@ -178,160 +172,94 @@
         </div>
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <ul class="catalog__list">
-          <li class="card catalog__item">
-            <a class="card__link link" href="#">
-              <figure>
-                <img class="card__image image" src="files/hotel-1.jpg"  width="300" height="211" alt="Гостиница: Amara Resort & Spa.">
-                <figcaption><h3 class="card__title">Amara Resort & Spa</h3></figcaption>
-              </figure>
+          <li class="catalog__item">
+            <a class="card__image-box" href="#">
+              <img class="card__image image" src="files/hotel-1.jpg"  width="300" height="211" alt="Гостиница: Amara Resort & Spa.">
             </a>
-            <dl class="card__content">
-              <dt class="card__text">Гостиница</dt>
-              <dd class="card__text">От 4000 &#8381;</dd>
+            <a class="card__title-box link" href="#">
+              <h3 class="card__title">Amara Resort & Spa</h3>
+            </a>
+            <dl class="card__type-box card__text">
+              <dt>Гостиница</dt>
+              <dd>От 4000 &#8381;</dd>
             </dl>
-            <ul class="card__functions">
-              <li class="card__function">
-                <a class="button button_second link" href="#">
-                  <span>Подробнее</span>
-                </a>
-              </li>
-              <li class="card__function">
-                <button type="button" class="button">
-                  <span>В избранное</span>
-                </button>
-              </li>
-              <li class="card__function">
-                <ul class="card__rating rating">
-                  <li class="rating__stars"></li>
-                  <li class="rating__info">Рейтинг: 5,0</li>
-                </ul>
-              </li>
-            </ul>
+            <button class="card__detail-box button button_small button_secondary" type="button">Подробнее</button>
+            <button class="card__favorite-box button button_small button_primary" type="button">В избранное</button>
+            <div class="card__stars-box"></div>
+            <button class="card__rating-box button button_small button_info button_rating" type="button">Рейтинг: 8,5</button>
           </li>
-          <li class="card catalog__item">
-            <a class="card__link link" href="#">
-              <figure>
-                <img class="card__image image" src="files/hotel-2.jpg" width="300" height="211" alt="Гостиница: Villas at Poco Diablo.">
-                <figcaption><h3 class="card__title">Villas at Poco Diablo</h3></figcaption>
-              </figure>
+          <li class="catalog__item">
+            <a class="card__image-box" href="#">
+              <img class="card__image image" src="files/hotel-2.jpg"  width="300" height="211" alt="Гостиница: Villas at Poco Diablo.">
             </a>
-            <dl class="card__content">
-              <dt class="card__text">Гостиница</dt>
-              <dd class="card__text">От 5000 &#8381;</dd>
+            <a class="card__title-box link" href="#">
+              <h3 class="card__title">Villas at Poco Diablo</h3>
+            </a>
+            <dl class="card__type-box card__text">
+              <dt>Гостиница</dt>
+              <dd>От 5000 &#8381;</dd>
             </dl>
-            <ul class="card__functions">
-              <li class="card__function">
-                <a class="button button_second link" href="#">
-                  <span>Подробнее</span>
-                </a>
-              </li>
-              <li class="card__function">
-                <button type="button" class="button button_enabled">
-                  <span>В избранное</span>
-                </button>
-              </li>
-              <li class="card__function">
-                <ul class="card__rating rating">
-                  <li class="rating__stars"></li>
-                  <li class="rating__info">Рейтинг: 5,0</li>
-                </ul>
-              </li>
-            </ul>
+            <button class="card__detail-box button button_small button_secondary" type="button">Подробнее</button>
+            <button class="card__favorite-box button button_small button_primary button_success" type="button">В избранном</button>
+            <div class="card__stars-box"></div>
+            <button class="card__rating-box button button_small button_info button_rating" type="button">Рейтинг: 9,2</button>
           </li>
-          <li class="card catalog__item">
-            <a class="card__link link" href="#">
-              <figure>
-                <img class="card__image image" src="files/hotel-3.jpg" width="300" height="211" alt="Гостиница: Desert Quail Inn.">
-                <figcaption><h3 class="card__title">Desert Quail Inn</h3></figcaption>
-              </figure>
+          <li class="catalog__item">
+            <a class="card__image-box" href="#">
+              <img class="card__image image" src="files/hotel-3.jpg"  width="300" height="211" alt="Гостиница: Desert Quail Inn.">
             </a>
-            <dl class="card__content">
-              <dt class="card__text">Гостиница</dt>
-              <dd class="card__text">От 2500 &#8381;</dd>
+            <a class="card__title-box link" href="#">
+              <h3 class="card__title">Desert Quail Inn</h3>
+            </a>
+            <dl class="card__type-box card__text">
+              <dt>Гостиница</dt>
+              <dd>От 2500 &#8381;</dd>
             </dl>
-            <ul class="card__functions">
-              <li class="card__function">
-                <a class="button button_second link" href="#">
-                  <span>Подробнее</span>
-                </a>
-              </li>
-              <li class="card__function">
-                <button type="button" class="button">
-                  <span>В избранное</span>
-                </button>
-              </li>
-              <li class="card__function">
-                <ul class="card__rating rating">
-                  <li class="rating__stars"></li>
-                  <li class="rating__info">Рейтинг: 6,9</li>
-                </ul>
-              </li>
-            </ul>
+            <button class="card__detail-box button button_small button_secondary" type="button">Подробнее</button>
+            <button class="card__favorite-box button button_small button_primary" type="button">В избранное</button>
+            <div class="card__stars-box"></div>
+            <button class="card__rating-box button button_small button_info button_rating" type="button">Рейтинг: 6,9</button>
           </li>
-          <li class="card catalog__item">
-            <a class="card__link link" href="#">
-              <figure>
-                <img class="card__image image" src="files/hotel-4.jpg" width="300" height="211" alt="Гостиница: GreenTree Inn.">
-                <figcaption><h3 class="card__title">GreenTree Inn</h3></figcaption>
-              </figure>
+          <li class="catalog__item">
+            <a class="card__image-box" href="#">
+              <img class="card__image image" src="files/hotel-4.jpg"  width="300" height="211" alt="Гостиница: GreenTree Inn.">
             </a>
-            <dl class="card__content">
-              <dt class="card__text">Гостиница</dt>
-              <dd class="card__text">От 1500 &#8381;</dd>
+            <a class="card__title-box link" href="#">
+              <h3 class="card__title">GreenTree Inn</h3>
+            </a>
+            <dl class="card__type-box card__text">
+              <dt>Гостиница</dt>
+              <dd>От 1500 &#8381;</dd>
             </dl>
-            <ul class="card__functions">
-              <li class="card__function">
-                <a class="button button_second link" href="#">
-                  <span>Подробнее</span>
-                </a>
-              </li>
-              <li class="card__function">
-                <button type="button" class="button">
-                  <span>В избранное</span>
-                </button>
-              </li>
-              <li class="card__function">
-                <ul class="card__rating rating">
-                  <li class="rating__stars"></li>
-                  <li class="rating__info">Рейтинг: 5,0</li>
-                </ul>
-              </li>
-            </ul>
+            <button class="card__detail-box button button_small button_secondary" type="button">Подробнее</button>
+            <button class="card__favorite-box button button_small button_primary" type="button">В избранное</button>
+            <div class="card__stars-box"></div>
+            <button class="card__rating-box button button_small button_info button_rating" type="button">Рейтинг: 5,0</button>
           </li>
         </ul>
         <ul class="catalog__pagination">
           <li class="pagination">
             <ul class="pagination__list">
               <li class="pagination__item">
-                <a class="pagination__button button button_large link" href="#">
-                  <span class="pagination__text">1</span>
-                </a>
+                <a class="pagination__button button button_primary button_large" href="#">1</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__button button button_large link" href="#">
-                  <span class="pagination__text">2</span>
-                </a>
+                <a class="pagination__button button button_primary button_large" href="#">2</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__button button button_large link" href="#">
-                  <span class="pagination__text">3</span>
-                </a>
+                <a class="pagination__button button button_primary button_large" href="#">3</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__button button button_large link" href="#">
-                  <span class="pagination__text">4</span>
-                </a>
+                <a class="pagination__button button button_primary button_large" href="#">4</a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__button button button_large link" href="#">
+                <a class="pagination__button button button_primary button_large" href="#">
                   <span class="visually-hidden">Следующие страницы</span>
-                  <span class="pagination__text">...</span>
+                  ...
                 </a>
               </li>
               <li class="pagination__item">
-                <a class="pagination__button button button_large link" href="#">
-                  <span class="pagination__text">10</span>
-                </a>
+                <a class="pagination__button button button_primary button_large" href="#">10</a>
               </li>
             </ul>
           </li>
@@ -351,9 +279,7 @@
           <p class="subscription__title title"><label for="subscription__input">Подпишитесь на рассылку</label></p>
           <p class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <input id="subscription__input" class="input" type="email" name="email" placeholder="Ваш e-mail" required>
-          <button class="subscription__button button button_large" type="submit">
-            <span>Подписаться</span>
-          </button>
+          <button class="subscription__button button button_large button_primary" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
