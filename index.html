@@ -9,20 +9,20 @@
   <body class="page">
     <div class="page__wrapper">
       <header class="header page__header">
-        <a class="logo header__logo">
+        <a class="logo header__logo" href="index.html">
           <img class="logo__image image" src="images/logo-main.svg" width="139" height="70" alt="Логотип Седона.">
         </a>
         <div class="nav__wrapper">
           <nav class="nav header__nav">
             <ul class="nav__list header__main-nav">
               <li class="nav__item nav__item_enabled">
-                <a class="nav__link link" href="index.html">Главная</a>
+                <a class="nav__link link">Главная</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link link" href="#">О Седоне</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link link nav__link_disabled" href="catalog.html">Гостиницы</a>
+                <a class="nav__link link" href="catalog.html">Гостиницы</a>
               </li>
             </ul>
             <ul class="nav__list header__user-nav">
@@ -158,8 +158,10 @@
           <form action="https://echo.htmlacademy.ru/" method="post" name="subscription">
             <p class="subscription__title title"><label for="subscription__input">Подпишитесь на рассылку</label></p>
             <p class="subscription__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <input id="subscription__input" class="input" type="email" name="email" placeholder="Ваш e-mail" required>
-            <button class="subscription__button button_secondary button button_large" type="submit">Подписаться</button>
+            <div class="subscription__input-box">
+              <input id="subscription__input" class="input" type="email" name="email" placeholder="Ваш e-mail" required>
+              <button class="subscription__button button button_large button_secondary" type="submit">Подписаться</button>
+            </div>
           </form>
         </section>
       </main>

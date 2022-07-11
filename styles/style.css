@@ -57,14 +57,14 @@ html {
   background-color: #615048;
 }
 
-.button_primary:focus {
-  background-color: #615048;
-  outline: none;
-}
-
 .button_primary:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button_primary:focus {
+  background-color: #615048;
+  outline: none;
 }
 
 .button_secondary {
@@ -75,14 +75,14 @@ html {
   background-color: #68A2CA;
 }
 
-.button_secondary:not(.button_current):focus {
-  background-color: #68A2CA;
-  outline: none;
-}
-
 .button_secondary:not(.button_current):active {
   background-color: #82B3D3;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button_secondary:not(.button_current):focus {
+  background-color: #68A2CA;
+  outline: none;
 }
 
 .button_success {
@@ -93,14 +93,14 @@ html {
   background-color: #6C9E42;
 }
 
-.button_success:focus {
-  background-color: #6C9E42;
-  outline: none;
-}
-
 .button_success:active {
   background-color: #7DB54F;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.button_success:focus {
+  background-color: #6C9E42;
+  outline: none;
 }
 
 .button_current {
@@ -201,13 +201,31 @@ html {
   box-sizing: border-box;
 }
 
-.nav__item:hover,
-.nav__item:focus {
+.nav__item_enabled {
+  position: relative;
+}
+
+.nav__item_enabled::after {
+  content: "";
+  position: absolute;
+  background-color: #756257;
+  height: 2px;
+  left: 17px;
+  right: 17px;
+  bottom: 0;
+}
+
+.nav__item:not(.nav__item_enabled) a:hover {
   color: #756157;
 }
 
-.nav__item:active {
+.nav__item:not(.nav__item_enabled) a:active {
   color: rgba(117, 97, 87, 0.3);
+}
+
+.nav__item:not(.nav__item_enabled) a:focus {
+  color: #756157;
+  outline: none;
 }
 
 .header__main-nav .nav__link {
@@ -286,7 +304,7 @@ html {
 
 .main__header {
   background-color: lightslategray;
-  background-image: url('../images/background-index.jpg');
+  background-image: url('../images/catalog-background.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #fff;
@@ -327,18 +345,17 @@ html {
   color: white;
 }
 
-
 .breadcrumbs__link:not(.breadcrumbs__link_desabled):hover {
-  color: grey;
-}
-
-.breadcrumbs__link:not(.breadcrumbs__link_desabled):focus {
-  color: grey;
-  outline: none;
+  color: #756157;
 }
 
 .breadcrumbs__link:not(.breadcrumbs__link_desabled):active {
-  color: tomato;
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.breadcrumbs__link:not(.breadcrumbs__link_desabled):focus {
+  color: #756157;
+  outline: none;
 }
 
 .filter__list {
@@ -391,10 +408,24 @@ html {
 .button_reset {
   display: block;
   margin: 20px auto 0;
-  padding: 0;
+  padding: 10px;
   border: none;
   color: inherit;
   background-color: transparent;
+  cursor: pointer;
+}
+
+.button_reset:hover {
+  color: #756157;
+}
+
+.button_reset:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.button_reset:focus {
+  color: #756157;
+  outline: none;
 }
 
 .advantages__thesis {
@@ -616,12 +647,12 @@ html {
   border-color: #000;
 }
 
-.sort__button:not(.sort__button_active):focus {
-  border-color: #68A2CA;
-}
-
 .sort__button:not(.sort__button_active):active {
   border-color: #000;
+}
+
+.sort__button:not(.sort__button_active):focus {
+  border-color: #68A2CA;
 }
 
 .catalog__list {
@@ -773,6 +804,11 @@ html {
   margin: 0 auto 46px;
 }
 
+.subscription__input-box {
+  display: flex;
+  justify-content: center;
+}
+
 .subscription__button {
   min-width: 200px;
   border: none;
@@ -823,16 +859,16 @@ html {
   fill: #68A2CA;
 }
 
+.community__link:active > svg {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 .community__link:focus {
   outline: none;
 }
 
 .community__link:focus > svg {
   fill: #68A2CA;
-}
-
-.community__link:active > svg {
-  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer__phone {
@@ -853,13 +889,13 @@ html {
   color: #756157;
 }
 
+.phone__link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .phone__link:focus {
   color: #756157;
   outline: none;
-}
-
-.phone__link:active {
-  color: rgba(117, 97, 87, 0.3);
 }
 
 .footer__logo > svg {
@@ -871,14 +907,14 @@ html {
   fill: #756157;
 }
 
+.footer__logo:active > svg {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 .footer__logo:focus {
   outline: none;
 }
 
 .footer__logo:focus > svg {
   fill: #756157;
-}
-
-.footer__logo:active > svg {
-  fill: rgba(117, 97, 87, 0.3);
 }
