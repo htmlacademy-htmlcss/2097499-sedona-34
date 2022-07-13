@@ -128,7 +128,7 @@ html {
   line-height: 21px;
   color: #333;
   font-family: inherit;
-  padding: 14px 33px 14px 20px;
+  padding: 14px 38px 14px 20px;
   outline: 2px solid #E5E5E5;
   border-style: none;
   background-color: white;
@@ -258,6 +258,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .header__user-nav li {
@@ -357,6 +358,7 @@ html {
   padding: 0;
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs__item:not(:last-child) {
@@ -443,6 +445,7 @@ html {
   background-color: #FFF;
   margin-right: 20px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .filter__input[type="checkbox"]:checked + .filter__mark_infrastructure::before {
@@ -476,6 +479,7 @@ html {
   background-color: #FFF;
   margin-right: 20px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .filter__input[type="radio"]:checked + .filter__mark_type::before {
@@ -800,6 +804,7 @@ html {
 
 .sort__select {
   min-width: 290px;
+  margin-right: 20px;
 }
 
 .sort__views {
@@ -906,19 +911,19 @@ html {
   align-self: center;
 }
 
-.card__stars {
+.stars {
   display: flex;
   padding: 0;
   list-style-type: none;
 }
 
-.card__star {
+.star__item {
   width: 18px;
   height: 17px;
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='17' viewBox='0 0 18 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z' fill='%2383B3D3'/%3E%3C/svg%3E");
 }
 
-.card__star:not(:last-child) {
+.star__item:not(:last-child) {
   margin-right: 6px;
 }
 
@@ -1008,7 +1013,7 @@ html {
 
 .subscription_image {
   background-color: lightslategray;
-  background-image: url('../images/background-footer.jpg');
+  background-image: url('../images/background-subscription.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #fff;
